@@ -1,3 +1,8 @@
+document.getElementsByClassName("track-PrintPackingSlips")[0].addEventListener("click", function() {
+    document.getElementsByClassName("lnk-add-tag")[0].click();
+});
+
+
 for (var k = 0; k < 2; k++) {
     document.getElementsByClassName("btn-ship")[k].addEventListener("click", function() {
         var i = 0;
