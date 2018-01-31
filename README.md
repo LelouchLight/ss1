@@ -2,6 +2,25 @@ document.getElementsByClassName("track-PrintPackingSlips")[0].addEventListener("
     document.getElementsByClassName("lnk-add-tag")[0].click();
 });
 
+function autoTag() {
+
+    if (document.getElementsByClassName("track-PrintPackingSlips").length > 0) {
+
+        setTimeout(function () {
+            document.getElementsByClassName("track-PrintPackingSlips")[0].addEventListener("click", function() {
+                document.getElementsByClassName("lnk-add-tag")[0].click();
+            });
+        }, 500)
+
+        return;
+    } else { autoTag(); }
+}
+
+autoTag();
+
+
+
+
 
 for (var k = 0; k < 2; k++) {
     document.getElementsByClassName("btn-ship")[k].addEventListener("click", function() {
